@@ -1,0 +1,142 @@
+/***************** MEDIA QUERIES ***********************/
+@media screen and (max-width: 768px) {
+  .nav, .dropdown, .content-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/***************** TAG SELECTORS ***********************/
+body {
+  background-color: #f1f4c6;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-family: 'Nothing You Could Do', cursive;
+  font-size: 4rem;
+}
+
+h3 {
+  font-weight: normal;
+  font-family: 'Montaga', serif;
+}
+
+p {
+  text-indent: 50px;
+}
+
+/******************** NAV *************************/
+.nav {
+  background-color: #837d7d;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav a {
+  color: white;
+  font-size: 16px;
+  padding: 16px 20px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #aaa6a4;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 51px;
+  min-width: 175px;
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 16px 20px;
+  background-color: #aaa6a4;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background-color: #837d7d;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*********************** HEADER **************************/
+.header {
+  background-color: #d6d0b8;
+  padding: 100px;
+  text-align: center;
+}
+
+/*********************** CONTENT ************************/
+.fake-img {
+  display: flex;
+  justify-content: space-around;
+  color: white;
+  height: auto;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.fake-img > img {
+  border: solid 2px;
+  border-color: #837d7d;
+  border-radius: 100%;
+}
+
+.bulb-img {
+  height: 225px;
+  width: 225px;
+}
+
+.content-container {
+  display: flex;
+}
+
+.side {
+  flex: 30%;
+  padding: 30px;
+  text-align: justify;
+}
+
+.side > h3 {
+  font-weight: bold;
+}
+
+.side > img {
+  border: solid 2px;
+  border-color: #837d7d;
+  border-radius: 10px;
+}
+
+.main {
+  flex: 70%;
+  padding: 30px;
+  text-align: justify;
+}
+
+.main > h3 {
+  font-weight: bold;
+}
+
+/******************** FOOTER *********************/
+.footer {
+  color: #837d7d;
+  background-color: #d6d0b8;
+  font-size: 0.8rem;
+  padding: 30px;
+  text-align: center;
+}
