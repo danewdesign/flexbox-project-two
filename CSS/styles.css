@@ -7,6 +7,9 @@
   .header {
     margin-top: 255px;
   }
+  .dropdown-content {
+    left: 58%;
+  }
 }
 
 /***************** TAG SELECTORS ***********************/
