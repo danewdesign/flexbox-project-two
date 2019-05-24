@@ -31,6 +31,9 @@ p {
 .nav {
   background-color: #837d7d;
   display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
   justify-content: flex-end;
 }
 
